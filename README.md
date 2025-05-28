@@ -25,8 +25,7 @@ in every web app developed by Code For Belgium.
 
 ### Deliverables
 
-- A working demo (HTML/CSS/JS or framework component) showing your solution in action.
-- Clear instructions (README) on how to integrate your solution into any web app.
+- An image, video or GIF demonstrating your solution in action.
 
 ---
 
