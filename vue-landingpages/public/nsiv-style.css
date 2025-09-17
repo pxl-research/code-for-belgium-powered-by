@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #003366;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+  flex: 1;
+}
+
+.main-layout {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2em;
+}
+
+.main-image, .main-content {
+  flex: 1;
+  width: 50%;
+}
+
+.main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: #003366;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 0.5em;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.cfb-footer {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  width: 100%;
+}
+
+.cfb-footer a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.cfb-footer a:hover, .cfb-footer a:focus {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.cfb-logo-small {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-image, .main-content {
+    width: 100%;
+  }
+  
+  .main-image {
+    margin-bottom: 1em;
+  }
+  
+  .main-image img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1em;
+  }
+  
+  .main-content {
+    padding: 1em;
+  }
+  
+  .cfb-footer {
+    font-size: 0.9em;
+  }
+}
